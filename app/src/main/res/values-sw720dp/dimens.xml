@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="layout_width_zero" tools:ignore="MissingDefaultResource">0dp</dimen>
+    <dimen name="linear_padding" tools:ignore="MissingDefaultResource">25dp</dimen>
+    <dimen name="ed_margin_top" tools:ignore="MissingDefaultResource">45dp</dimen>
+    <dimen name="ed_text_size" tools:ignore="MissingDefaultResource">55sp</dimen>
+    <dimen name="btn_read.stop_margin_top" tools:ignore="MissingDefaultResource">30dp</dimen>
+    <dimen name="btn_read.stop_margin_end" tools:ignore="MissingDefaultResource">20dp</dimen>
+    <dimen name="btn_read_text_size" tools:ignore="MissingDefaultResource">45sp</dimen>
+    <dimen name="tv_pitch.speed_margin_start" tools:ignore="MissingDefaultResource">25dp</dimen>
+    <dimen name="tv_pitch.speed_margin_top" tools:ignore="MissingDefaultResource">16dp</dimen>
+    <dimen name="tv_pitch.speed_text_size" tools:ignore="MissingDefaultResource">30sp</dimen>
+    <dimen name="seek_bar_pitch.speed_width" tools:ignore="MissingDefaultResource">350dp</dimen>
+    <dimen name="seek_bar_pitch.speed_height" tools:ignore="MissingDefaultResource">35dp</dimen>
+    <dimen name="btn_width" tools:ignore="MissingDefaultResource">220dp</dimen>
+    <dimen name="btn_height" tools:ignore="MissingDefaultResource">72dp</dimen>
+</resources>

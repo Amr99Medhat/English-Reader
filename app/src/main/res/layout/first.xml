@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_dark"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".First">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_width_zero"
+        android:layout_weight="80"
+        android:orientation="vertical"
+        android:padding="@dimen/linear_padding">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/ed_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ed_margin_top"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ed_text_size"
+                    android:hint="@string/ed_hint"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_width_zero"
+        android:layout_weight="20">
+
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <Button
+                   android:id="@+id/btn_read"
+                   android:layout_width="@dimen/btn_width"
+                   android:layout_height="@dimen/btn_height"
+                   android:layout_alignParentEnd="true"
+                   android:layout_marginTop="@dimen/btn_read.stop_margin_top"
+                   android:layout_marginEnd="@dimen/btn_read.stop_margin_end"
+                   android:background="@drawable/btn_shape"
+                   android:enabled="false"
+                   android:inputType="text"
+                   android:text="@string/btn_read_text"
+                   android:textSize="@dimen/btn_read_text_size"
+                   android:textColor="@color/white" />
+
+               <Button
+                   android:id="@+id/btn_Stop"
+                   android:layout_width="@dimen/btn_width"
+                   android:layout_height="@dimen/btn_height"
+                   android:layout_below="@id/btn_read"
+                   android:layout_alignParentEnd="true"
+                   android:layout_marginTop="@dimen/btn_read.stop_margin_top"
+                   android:layout_marginEnd="@dimen/btn_read.stop_margin_end"
+                   android:enabled="false"
+                   android:inputType="text"
+                   android:text="@string/btn_stop_text"
+                   android:textSize="@dimen/btn_read_text_size"
+                   android:background="@drawable/btn_shape"
+                   android:textColor="@color/white"/>
+
+               <TextView
+                   android:id="@+id/tv_pitch"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentStart="true"
+                   android:layout_marginStart="@dimen/tv_pitch.speed_margin_start"
+                   android:layout_marginTop="@dimen/tv_pitch.speed_margin_top"
+                   android:text="@string/tv_pitch"
+                   android:textColor="@color/white"
+                   android:textSize="@dimen/tv_pitch.speed_text_size"
+                   android:background="@color/gray"/>
+
+               <SeekBar
+                   android:id="@+id/seek_bar_pitch"
+                   android:layout_width="@dimen/seek_bar_pitch.speed_width"
+                   android:layout_height="@dimen/seek_bar_pitch.speed_height"
+                   android:layout_below="@id/tv_pitch"
+                   android:progress="50"
+                   />
+
+               <TextView
+                   android:id="@+id/tv_speed"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/seek_bar_pitch"
+                   android:layout_alignParentStart="true"
+                   android:layout_marginStart="@dimen/tv_pitch.speed_margin_start"
+                   android:layout_marginTop="@dimen/tv_pitch.speed_margin_top"
+                   android:text="@string/tv_speed"
+                   android:textColor="@color/white"
+                   android:textSize="@dimen/tv_pitch.speed_text_size"
+                   android:background="@color/gray"/>
+
+               <SeekBar
+                   android:id="@+id/seek_bar_speed"
+                   android:layout_width="@dimen/seek_bar_pitch.speed_width"
+                   android:layout_height="@dimen/seek_bar_pitch.speed_height"
+                   android:layout_below="@id/tv_speed"
+                   android:progress="50"
+                   />
+           </RelativeLayout>
+       </ScrollView>
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

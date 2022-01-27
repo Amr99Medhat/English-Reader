@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">English Reader</string>
+    <string name="ed_hint">English Text</string>
+    <string name="btn_read_text">Read</string>
+    <string name="btn_stop_text">Stop</string>
+    <string name="tv_pitch">Pitch</string>
+    <string name="tv_speed">Speed</string>
+</resources>
